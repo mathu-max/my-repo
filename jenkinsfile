@@ -1,11 +1,11 @@
-pipeline {
+upipeline {
     agent any
 
     environment {
         DOCKERHUB_CREDENTIALS = credentials('docker-hub-credentials')  // Reference the Docker Hub credentials in Jenkins
         DOCKER_IMAGE = 'your-dockerhub-username/your-image-name'  // Docker Hub repository path
     }
-
+use this one example
     stages {
         stage('Clone Repository') {
 
